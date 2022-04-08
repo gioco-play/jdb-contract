@@ -30,10 +30,9 @@ interface JDBServiceInterface {
      * @param string $op_code
      * @param integer $past_minutes
      * @param string $cache_key
-     * @param bool $re_grabber
      * @return mixed
      */
-    function betLogGrabber(string $op_code, int $past_minutes, string $cache_key, bool $re_grabber = false);
+    function betLogGrabber(string $op_code, int $past_minutes, string $cache_key);
 
     /**
      * 全營商 抓取遊戲紀錄
