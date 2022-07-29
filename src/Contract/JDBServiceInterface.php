@@ -73,5 +73,22 @@ interface JDBServiceInterface {
      * @return mixed
      */
     function orderFailCheck(string $op_code, string $order_no);
-}
 
+    /**
+     * 營商帳號轉換為遊戲商帳號
+     * @param string $player_name
+     * @param string $op_code
+     * @param string $vendor_code
+     * @return mixed
+     */
+    function accountToVendor(string $player_name, string $op_code, string $vendor_code);
+
+    /**
+     * 遊戲商帳號轉換為營商帳號
+     * @param string $vendor_account
+     * @param string $op_code
+     * @param string $vendor_code
+     * @return mixed
+     */
+    function accountToOperator(string $vendor_account, string $op_code, string $vendor_code);
+}
