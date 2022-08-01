@@ -24,7 +24,7 @@ interface JDBServiceInterface {
      * @param string $language
      * @return mixed
      */
-    function gameDetail(string $op_code, string $bet_id, string $language);
+    function gameDetail(string $op_code, string $bet_id, string $language = 'zh');
 
     /**
      * 抓取遊戲紀錄
